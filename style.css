@@ -25,6 +25,14 @@ body {
 header, main, footer {
   padding: var(--space-4);
 }
+
+nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+ 
+}
+
 a{
   color: var(--accent);
   text-decoration: none;
@@ -52,4 +60,15 @@ button {
 }
 section {
   margin-bottom: var(--space-8);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 1280px){
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
